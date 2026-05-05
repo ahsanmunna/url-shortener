@@ -1,5 +1,3 @@
-
-```markdown
 # URL Shortener — Privacy First
 
 A backend API that shortens URLs without tracking you. No signups, no data collection, no surveillance capitalism.
@@ -29,33 +27,33 @@ Most URL shorteners are data collection tools disguised as utilities. This one s
 
 1. Clone the repository
 ```
-git clone https://github.com/ahsanmunna/url-shortener.git
-cd url-shortener
+   git clone https://github.com/ahsanmunna/url-shortener.git
+   cd url-shortener
 ```
 
 2. Create virtual environment
 ```
-python -m venv venv
-venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
 ```
 
 3. Install dependencies
 ```
-pip install -r requirements.txt
+   pip install -r requirements.txt
 ```
 
 4. Create a `.env` file
 ```
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=url_shortener
-DB_USER=postgres
-DB_PASSWORD=yourpassword
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=url_shortener
+   DB_USER=postgres
+   DB_PASSWORD=yourpassword
 ```
 
 5. Run the server
 ```
-uvicorn main:app --reload
+   uvicorn main:app --reload
 ```
 
 ## API Endpoints
@@ -70,7 +68,6 @@ uvicorn main:app --reload
 ## Example Request
 
 ```json
-POST /shorten
 {
     "original_url": "https://facebook.com/profile?fbclid=abc123&utm_source=facebook",
     "is_ghost": false,
